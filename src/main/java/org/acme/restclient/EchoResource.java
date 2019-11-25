@@ -21,7 +21,6 @@ public class EchoResource {
   @GET
   @Produces(MediaType.TEXT_PLAIN)
   public String hello() {
-    log.info("HELOO RESOURCE");
     return service.echo();
   }
 }

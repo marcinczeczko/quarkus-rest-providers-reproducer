@@ -18,7 +18,7 @@ public class RequestFilter implements ClientRequestFilter {
 
   @Override
   public void filter(ClientRequestContext requestContext) throws IOException {
-    log.infof("bean.foo() = <%s> ", bean.foo());
-    log.infof("Config.getFoo() = <%s> ", config.getFoo());
+    log.infof("SomeBean = <%s> ", bean);
+    log.infof("AppConfig = <%s> ", config);
   }
 }
